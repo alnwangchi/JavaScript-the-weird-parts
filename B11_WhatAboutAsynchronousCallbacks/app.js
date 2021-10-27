@@ -1,6 +1,8 @@
 // long running function
 function waitThreeSeconds() {
     var ms = 3000 + new Date().getTime();
+    console.log(ms);
+    console.log(new Date);
     while (new Date() < ms){}
     console.log('finished function');
 }
